@@ -1,0 +1,11 @@
+tip
+warning
+important
+callout
+image
+'custom/getting_started_series.html'
+inline_image
+initialize_shuffle
+taglogic
+archive
+
