@@ -12,9 +12,8 @@ sidebar: mydoc_sidebar
   <li >{{sidebar[0].product}} {{sidebar[0].version}}</li>
   {% for entry in sidebar %}
   {% for folder in entry.folders %}
-  {% if folder.output contains "web" %}
   <li>
-      <a class="xz" href="#">{{ folder.title }} <img class="more" src="assets/likeali/images/more.png"/></a>
+      <a class="xz" href="#">{{ folder.title }} </a>
       <!-- <ul class="er"> -->
           <!-- {% for folderitem in folder.folderitems %} -->
           <!-- {% if folderitem.output contains "web" %} -->
@@ -40,7 +39,6 @@ sidebar: mydoc_sidebar
           <!-- {% endfor %} -->
       <!-- </ul> -->
   </li>
-    {% endif %}
     {% endfor %}
     {% endfor %}
 
@@ -48,96 +46,96 @@ sidebar: mydoc_sidebar
 
 
 <!-- <ul class="ce"> -->
-	<li>
-		<a class="xz"  href="#">目录A</a>
-	</li>
-	<li> 
-		<a href="#">目录B <img class="more" src="assets/likeali/images/more.png"/>
-		</a>
-		<ul class="er">
-			<li>
-				<a  href="##">二级目录A</a>
-			</li>
-			<li class="e_li"> 
-				<a  href="##">二级目录B</a> 
-				<ul class="thr">
-					<li>
-						<a  href="##">三级目录A</a>
-					</li>
-					<li> 
-						<a  href="##">三级目录B <img class="more1" src="assets/likeali/images/more1.png"/>
-						</a> 
-						<div class="thr_nr">
-							<h3> 三级目录B主要内容 </h3>
-							<img src="assets/likeali/images/aa.png"/>
-						</div>
-					</li>
-					<li>
-						<a  href="##">三级目录C</a>
-					</li>
-					<li> 
-						<a  href="##">三级目录D <img class="more1" src="assets/likeali/images/more1.png"/>
-						</a> 
-						<div class="thr_nr">
-							<h3> 三级目录D主要内容 </h3>
-							<img src="assets/likeali/images/bb.png"/>
-						</div>
-					</li>
-					<div class="clear"/>
-				</ul>
-			</li>
-			<li>
-				<a  href="##">二级目录C</a>
-			</li>
-			<li class="e_li"> 
-				<a  href="##">二级目录D</a> 
-				<ul class="thr">
-					<li>
-						<a  href="##">三级目录A</a>
-					</li>
-					<li>
-						<a  href="##">三级目录B</a>
-					</li>
-					<li>
-						<a  href="##">三级目录C</a>
-					</li>
-					<li>
-						<a  href="##">三级目录D</a>
-					</li>
-					<div class="clear"/>
-				</ul>
-			</li>
-		</ul>
-	</li>
-	<li>
-		<a href="#">目录C</a>
-	</li>
-	<li>
-		<a href="#">目录D</a>
-	</li>
-	<li>
-		<a href="#">目录E</a>
-	</li>
-	<li> 
-		<a href="#">目录F <img class="more" src="assets/likeali/images/more.png"/>
-		</a>
-		<ul class="er">
-			<li>
-				<a  href="##">二级目录A</a>
-			</li>
-			<li>
-				<a  href="##">二级目录B</a>
-			</li>
-			<li>
-				<a  href="##">二级目录C</a>
-			</li>
-			<li>
-				<a  href="##">二级目录D</a>
-			</li>
-		</ul>
-	</li>
-	<div class="clear"/>
-</ul>
+	<!-- <li> -->
+		<!-- <a class="xz"  href="#">目录A</a> -->
+	<!-- </li> -->
+	<!-- <li>  -->
+		<!-- <a href="#">目录B <img class="more" src="assets/likeali/images/more.png"/> -->
+		<!-- </a> -->
+		<!-- <ul class="er"> -->
+			<!-- <li> -->
+				<!-- <a  href="##">二级目录A</a> -->
+			<!-- </li> -->
+			<!-- <li class="e_li">  -->
+				<!-- <a  href="##">二级目录B</a>  -->
+				<!-- <ul class="thr"> -->
+					<!-- <li> -->
+						<!-- <a  href="##">三级目录A</a> -->
+					<!-- </li> -->
+					<!-- <li>  -->
+						<!-- <a  href="##">三级目录B <img class="more1" src="assets/likeali/images/more1.png"/> -->
+						<!-- </a>  -->
+						<!-- <div class="thr_nr"> -->
+							<!-- <h3> 三级目录B主要内容 </h3> -->
+							<!-- <img src="assets/likeali/images/aa.png"/> -->
+						<!-- </div> -->
+					<!-- </li> -->
+					<!-- <li> -->
+						<!-- <a  href="##">三级目录C</a> -->
+					<!-- </li> -->
+					<!-- <li>  -->
+						<!-- <a  href="##">三级目录D <img class="more1" src="assets/likeali/images/more1.png"/> -->
+						<!-- </a>  -->
+						<!-- <div class="thr_nr"> -->
+							<!-- <h3> 三级目录D主要内容 </h3> -->
+							<!-- <img src="assets/likeali/images/bb.png"/> -->
+						<!-- </div> -->
+					<!-- </li> -->
+					<!-- <div class="clear"/> -->
+				<!-- </ul> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <a  href="##">二级目录C</a> -->
+			<!-- </li> -->
+			<!-- <li class="e_li">  -->
+				<!-- <a  href="##">二级目录D</a>  -->
+				<!-- <ul class="thr"> -->
+					<!-- <li> -->
+						<!-- <a  href="##">三级目录A</a> -->
+					<!-- </li> -->
+					<!-- <li> -->
+						<!-- <a  href="##">三级目录B</a> -->
+					<!-- </li> -->
+					<!-- <li> -->
+						<!-- <a  href="##">三级目录C</a> -->
+					<!-- </li> -->
+					<!-- <li> -->
+						<!-- <a  href="##">三级目录D</a> -->
+					<!-- </li> -->
+					<!-- <div class="clear"/> -->
+				<!-- </ul> -->
+			<!-- </li> -->
+		<!-- </ul> -->
+	<!-- </li> -->
+	<!-- <li> -->
+		<!-- <a href="#">目录C</a> -->
+	<!-- </li> -->
+	<!-- <li> -->
+		<!-- <a href="#">目录D</a> -->
+	<!-- </li> -->
+	<!-- <li> -->
+		<!-- <a href="#">目录E</a> -->
+	<!-- </li> -->
+	<!-- <li>  -->
+		<!-- <a href="#">目录F <img class="more" src="assets/likeali/images/more.png"/> -->
+		<!-- </a> -->
+		<!-- <ul class="er"> -->
+			<!-- <li> -->
+				<!-- <a  href="##">二级目录A</a> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <a  href="##">二级目录B</a> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <a  href="##">二级目录C</a> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <a  href="##">二级目录D</a> -->
+			<!-- </li> -->
+		<!-- </ul> -->
+	<!-- </li> -->
+	<!-- <div class="clear"/> -->
+<!-- </ul> -->
 
 
 

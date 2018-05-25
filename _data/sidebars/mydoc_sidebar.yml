@@ -4,10 +4,10 @@ entries:
 - title: sidebar
   product: Jekyll Doc Theme
   version: 6.0
-  &assetsurl: assets/likeali/
+#  &assetsurl: assets/likeali/
   folders:
 
-  - title:
+  - title: 一级目录A
     output: pdf
     type: frontmatter
     folderitems:
