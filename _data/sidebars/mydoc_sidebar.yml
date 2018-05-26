@@ -4,106 +4,38 @@ entries:
 - title: sidebar
   product: Jekyll Doc Theme
   version: 6.0
-  &assetsurl: assets/likeali/
+  # &assetsurl: assets/likeali/
   folders:
 
-  - title:
-    output: pdf
-    type: frontmatter
-    folderitems:
-    - title:
-      url: /titlepage.html
-      output: pdf
-      type: frontmatter
-    - title:
-      url: /tocpage.html
-      output: pdf
-      type: frontmatter
-
-  - title: 二级目录A
+  - title: 一级目录A
     output: web
     folderitems:
 
-    - title: 三级目录A
+    - title: 二级目录A
       url: /index.html
       output: web, pdf
       type: homepage
 
-    - title: 三级目录B
+    - title: 二级目录B
       url: /mydoc_introduction.html
       output: web, pdf
 
-    - title: 三级目录C
+    - title: 二级目录C
       url: /mydoc_supported_features.html
       output: web, pdf
 
 
-  - title: 二级目录B
+  - title: 一级目录B
     output: web, pdf
     folderitems:
 
-    - title: 三级目录A
+    - title: 二级目录A
       url: /mydoc_release_notes_60.html
       output: web, pdf
 
-    - title: 三级目录C
+    - title: 二级目录C
       url: /mydoc_release_notes_50.html
       output: web, pdf
-
-  - title: 二级目录C
-    output: web, pdf
-    folderitems:
-
-    - title: 三级目录A
-      url: /mydoc_about_ruby_gems_etc.html
-      output: web, pdf
-
-    - title: 三级目录b
-      url: /mydoc_install_jekyll_on_mac.html
-      output: web, pdf
-
-    - title: 三级目录c
-      url: /mydoc_install_jekyll_on_windows.html
-      output: web, pdf
-
-  - title: 二级目录D
-    output: web, pdf
-
-    folderitems:
-    - title: 三级目录A
-      url: /mydoc_pages.html
-      output: web, pdf
-
-    - title: 三级目录b
-      url: /mydoc_posts.html
-      output: web, pdf
-
-    - title: 三级目录c
-      url: /mydoc_lists.html
-      output: web, pdf
-
-
-
-  - title: 二级目录E
-    output: web, pdf
-
-    folderitems:
-    - title: Sidebar navigation
-      url: /mydoc_sidebar_navigation.html
-      output: web, pdf
-
-    - title: YAML tutorial in the context of Jekyll
-      url: /mydoc_yaml_tutorial.html
-      output: web, pdf
-
-    - title: Tags
-      url: /mydoc_tags.html
-      output: web, pdf
-
-    - title: Series
-      url: /mydoc_series.html
-      output: web, pdf
-
 
 
   - title: Publishing
@@ -126,36 +58,6 @@ entries:
       url: /mydoc_help_api.html
       output: web, pdf
 
-
-
-  - title: Special layouts
-    output: web, pdf
-
-    folderitems:
-    - title: Knowledge-base layout
-      url: /mydoc_kb_layout.html
-      output: web, pdf
-
-    - title: Glossary layout
-      url: /mydoc_glossary.html
-      output: web, pdf
-
-    - title: FAQ layout
-      url: /mydoc_faq_layout.html
-      output: web, pdf
-
-    - title: Shuffle layout
-      url: /mydoc_shuffle.html
-      output: web, pdf
-
-  - title: Troubleshooting
-    output: web, pdf
-
-    folderitems:
-
-    - title: Troubleshooting
-      url: /mydoc_troubleshooting.html
-      output: web, pdf
 
   - title: Tag archives
     output: web
