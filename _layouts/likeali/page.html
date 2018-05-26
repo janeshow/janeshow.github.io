@@ -1,0 +1,150 @@
+---
+layout: likeali/base
+sidebar: mydoc_sidebar
+
+---
+
+{% assign sidebar = site.data.sidebars.mydoc_sidebar.entries %}
+
+<div style="text-align:center;clear:both"></div>
+
+<ul class="ce">
+  <li >{{sidebar[0].product}} {{sidebar[0].version}}</li>
+  {% for entry in sidebar %}
+  {% for folder in entry.folders %}
+  <li>
+      <a class="xz" href="#">{{ folder.title }} </a>
+      <!-- <ul class="er"> -->
+          <!-- {% for folderitem in folder.folderitems %} -->
+          <!-- {% if folderitem.output contains "web" %} -->
+		  <!-- <li class="e_li"><a href="##" >{{folderitem.title}} </a></li> -->
+
+
+          <!-- {% for subfolders in folderitem.subfolders %} -->
+          <!-- {% if subfolders.output contains "web" %} -->
+          <!-- <li class="subfolders"> -->
+              <!-- <a href="##">{{ subfolders.title }}  <img class="more1" src="assets/likeali/images/more1.png"/></a> -->
+              <!-- <ul class="thr"> -->
+                  <!-- {% for subfolderitem in subfolders.subfolderitems %} -->
+                  <!-- {% if subfolderitem.output contains "web" %} -->
+                  <!-- <li><a href="##" >{{subfolderitem.title}}</a></li> -->
+                 
+                  <!-- {% endif %} -->
+                  <!-- {% endfor %} -->
+              <!-- </ul> -->
+          <!-- </li> -->
+          <!-- {% endif %} -->
+          <!-- {% endfor %} -->
+          <!-- {% endif %} -->
+          <!-- {% endfor %} -->
+      <!-- </ul> -->
+  </li>
+    {% endfor %}
+    {% endfor %}
+
+</ul>
+
+
+<!-- <ul class="ce"> -->
+	<!-- <li> -->
+		<!-- <a class="xz"  href="#">目录A</a> -->
+	<!-- </li> -->
+	<!-- <li>  -->
+		<!-- <a href="#">目录B <img class="more" src="assets/likeali/images/more.png"/> -->
+		<!-- </a> -->
+		<!-- <ul class="er"> -->
+			<!-- <li> -->
+				<!-- <a  href="##">二级目录A</a> -->
+			<!-- </li> -->
+			<!-- <li class="e_li">  -->
+				<!-- <a  href="##">二级目录B</a>  -->
+				<!-- <ul class="thr"> -->
+					<!-- <li> -->
+						<!-- <a  href="##">三级目录A</a> -->
+					<!-- </li> -->
+					<!-- <li>  -->
+						<!-- <a  href="##">三级目录B <img class="more1" src="assets/likeali/images/more1.png"/> -->
+						<!-- </a>  -->
+						<!-- <div class="thr_nr"> -->
+							<!-- <h3> 三级目录B主要内容 </h3> -->
+							<!-- <img src="assets/likeali/images/aa.png"/> -->
+						<!-- </div> -->
+					<!-- </li> -->
+					<!-- <li> -->
+						<!-- <a  href="##">三级目录C</a> -->
+					<!-- </li> -->
+					<!-- <li>  -->
+						<!-- <a  href="##">三级目录D <img class="more1" src="assets/likeali/images/more1.png"/> -->
+						<!-- </a>  -->
+						<!-- <div class="thr_nr"> -->
+							<!-- <h3> 三级目录D主要内容 </h3> -->
+							<!-- <img src="assets/likeali/images/bb.png"/> -->
+						<!-- </div> -->
+					<!-- </li> -->
+					<!-- <div class="clear"/> -->
+				<!-- </ul> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <a  href="##">二级目录C</a> -->
+			<!-- </li> -->
+			<!-- <li class="e_li">  -->
+				<!-- <a  href="##">二级目录D</a>  -->
+				<!-- <ul class="thr"> -->
+					<!-- <li> -->
+						<!-- <a  href="##">三级目录A</a> -->
+					<!-- </li> -->
+					<!-- <li> -->
+						<!-- <a  href="##">三级目录B</a> -->
+					<!-- </li> -->
+					<!-- <li> -->
+						<!-- <a  href="##">三级目录C</a> -->
+					<!-- </li> -->
+					<!-- <li> -->
+						<!-- <a  href="##">三级目录D</a> -->
+					<!-- </li> -->
+					<!-- <div class="clear"/> -->
+				<!-- </ul> -->
+			<!-- </li> -->
+		<!-- </ul> -->
+	<!-- </li> -->
+	<!-- <li> -->
+		<!-- <a href="#">目录C</a> -->
+	<!-- </li> -->
+	<!-- <li> -->
+		<!-- <a href="#">目录D</a> -->
+	<!-- </li> -->
+	<!-- <li> -->
+		<!-- <a href="#">目录E</a> -->
+	<!-- </li> -->
+	<!-- <li>  -->
+		<!-- <a href="#">目录F <img class="more" src="assets/likeali/images/more.png"/> -->
+		<!-- </a> -->
+		<!-- <ul class="er"> -->
+			<!-- <li> -->
+				<!-- <a  href="##">二级目录A</a> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <a  href="##">二级目录B</a> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <a  href="##">二级目录C</a> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <a  href="##">二级目录D</a> -->
+			<!-- </li> -->
+		<!-- </ul> -->
+	<!-- </li> -->
+	<!-- <div class="clear"/> -->
+<!-- </ul> -->
+
+
+
+<script  type="text/javascript" src="assets/likeali/js/jquery-1.4.2.min.js"></script> 
+<script  type="text/javascript" src="assets/likeali/js/main.js"></script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+	<p>适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗.</p>
+	</p>
+	<div>{{ content }}</div>
+
+</div>
