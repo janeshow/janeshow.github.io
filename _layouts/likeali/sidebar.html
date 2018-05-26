@@ -1,0 +1,151 @@
+---
+layout: likeali/base
+sidebar: mydoc_sidebar
+
+---
+
+{% assign sidebar = site.data.sidebars.mydoc_sidebar.entries %}
+
+<!-- <div style="text-align:center;clear:both"></div> -->
+<div class="console-component-sidebar">
+	<div class="sidebar-inner">
+		<div class="sidebar-fold icon-unfold">
+		</div>
+
+		<!-- 第一级菜单 -->
+		<!-- <li >{{sidebar[0].product}} {{sidebar[0].version}}</li> -->
+  {% for entry in sidebar %}
+  {% for folder in entry.folders %}
+		<!-- {% if folder.output contains "web" %} -->
+		<div class="sidebar-nav" >
+
+			<div class="sidebar-title sidebar-trans">
+				<div class="sidebar-title-inner">
+					<span class="sidebar-title-icon icon-arrow-right"></span>
+					<span class="sidebar-title-text">{{ folder.title }}</span>
+
+					<span class="sidebar-manage" >
+						<a class="icon-setup" ></a>
+					</span>
+
+				</div>
+			</div>
+
+			<!-- 第二级菜单 -->
+			<ul class="sidebar-trans" style="height: 200px;">
+            {% for folderitem in folder.folderitems %}
+				<!-- {% if folderitem.output contains "web" %} -->
+				<li  class="nav-item" >
+					<!-- <li class="e_li"><a href="##" >二</a></li> -->
+
+					<a href="##" class="sidebar-trans" >
+						<div class="nav-icon sidebar-trans">
+							<span class="icon-ecs"></span>
+						</div>
+						<span class="nav-title">{{folderitem.title}} &nbsp;</span>
+					</a>
+					
+					
+
+					<!-- <!-- 第三级菜单 --> -->
+					<!-- <ul class="thr"> -->
+					<!-- {% for subfolders in folderitem.subfolders %} -->
+						<!-- <!-- {% if subfolders.output contains "web" %} --> -->
+
+						<!-- <li > -->
+							<!-- <a href="##">{{ subfolders.title }}  <img class="more1" src="assets/likeali/images/more1.png"/></a> -->
+
+
+							<!-- <div class="thr_nr"> -->
+								<!-- <h3> 三级目录B主要内容 </h3> -->
+								<!-- <img src="assets/likeali/images/aa.png"/> -->
+							<!-- </div> -->
+
+						<!-- </li> -->
+						<!-- <!-- {% endif %} --> -->
+					<!-- {% endfor %} -->
+					<!-- </ul> -->
+
+
+
+				</li>
+				<!-- {% endif %} -->
+          {% endfor %}
+			</ul>
+
+		</div>
+		<!-- {% endif %} -->
+    {% endfor %}
+    {% endfor %}
+
+	</ul>
+
+
+
+	<!-- 第一级菜单 -->
+	<!-- <ul class="ce"> -->
+	<!-- <li >{{sidebar[0].product}} {{sidebar[0].version}}</li> -->
+	<!-- {% for entry in sidebar %} -->
+	<!-- {% for folder in entry.folders %} -->
+	<!-- <!-- {% if folder.output contains "web" %} --> -->
+	<!-- <li> -->
+	<!-- <a href="#">{{ folder.title }} </a> -->
+	<!-- <!-- 第二级菜单 --> -->
+	<!-- <ul class="er"> -->
+	<!-- {% for folderitem in folder.folderitems %} -->
+	<!-- <!-- {% if folderitem.output contains "web" %} --> -->
+	<!-- <li class="e_li"> -->
+	<!-- <a href="##" >{{folderitem.title}} </a> -->
+	<!-- <!-- <li class="e_li"><a href="##" >二</a></li> --> -->
+
+	<!-- <!-- 第三级菜单 --> -->
+	<!-- <ul class="thr"> -->
+	<!-- {% for subfolders in folderitem.subfolders %} -->
+	<!-- <!-- {% if subfolders.output contains "web" %} --> -->
+
+	<!-- <li > -->
+	<!-- <a href="##">{{ subfolders.title }}  <img class="more1" src="assets/likeali/images/more1.png"/></a> -->
+
+
+	<!-- <div class="thr_nr"> -->
+	<!-- <h3> 三级目录B主要内容 </h3> -->
+	<!-- <img src="assets/likeali/images/aa.png"/> -->
+	<!-- </div> -->
+
+
+	<!-- <!-- <ul class="thr"> --> -->
+	<!-- <!-- {% for subfolderitem in subfolders.subfolderitems %} --> -->
+	<!-- <!-- {% if subfolderitem.output contains "web" %} --> -->
+	<!-- <!-- <li><a href="##" >{{subfolderitem.title}}</a></li> --> -->
+
+	<!-- <!-- {% endif %} --> -->
+	<!-- <!-- {% endfor %} --> -->
+	<!-- <!-- </ul> --> -->
+	<!-- </li> -->
+	<!-- <!-- {% endif %} --> -->
+	<!-- {% endfor %} -->
+	<!-- </ul> -->
+	<!-- </li> -->
+	<!-- <!-- {% endif %} --> -->
+	<!-- {% endfor %} -->
+	<!-- </ul> -->
+	<!-- </li> -->
+	<!-- <!-- {% endif %} --> -->
+	<!-- {% endfor %} -->
+	<!-- {% endfor %} -->
+
+	<!-- </ul> -->
+
+
+
+</div>
+</div>
+
+<script  type="text/javascript" src="assets/likeali/js/jquery-1.4.2.min.js"></script> 
+<script  type="text/javascript" src="assets/likeali/js/main.js"></script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+	<p>适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗.</p>
+	<div>{{ content }}</div>
+
+</div>
