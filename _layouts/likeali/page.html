@@ -14,7 +14,7 @@ sidebar: mydoc_sidebar
   {% for folder in entry.folders %}
 	<!-- {% if folder.output contains "web" %} -->
 	<li>
-		<a href="#">{{ folder.title }} <img class="more" src="assets/likeali/images/more.png"/></a>
+		<a href="#">{{ folder.title }} </a>
 		<!-- 第二级菜单 -->
 		<ul class="er">
           {% for folderitem in folder.folderitems %}
@@ -30,6 +30,14 @@ sidebar: mydoc_sidebar
 
 					<li >
 						<a href="##">{{ subfolders.title }}  <img class="more1" src="assets/likeali/images/more1.png"/></a>
+						
+						
+						<div class="thr_nr">
+							<h3> 三级目录B主要内容 </h3>
+							<img src="assets/likeali/images/aa.png"/>
+						</div>
+						
+						
 						<!-- <ul class="thr"> -->
 						<!-- {% for subfolderitem in subfolders.subfolderitems %} -->
 						<!-- {% if subfolderitem.output contains "web" %} -->
