@@ -8,41 +8,61 @@ sidebar: mydoc_sidebar
 
 <div style="text-align:center;clear:both"></div>
 
-<ul class="ce">
-  <li >{{sidebar[0].product}} {{sidebar[0].version}}</li>
-  {% for entry in sidebar %}
-  {% for folder in entry.folders %}
-  <li>
-      <a class="xz" href="#">{{ folder.title }} </a>
-      <!-- <ul class="er"> -->
-          <!-- {% for folderitem in folder.folderitems %} -->
-          <!-- {% if folderitem.output contains "web" %} -->
-		  <!-- <li class="e_li"><a href="##" >{{folderitem.title}} </a></li> -->
 
 
-          <!-- {% for subfolders in folderitem.subfolders %} -->
-          <!-- {% if subfolders.output contains "web" %} -->
-          <!-- <li class="subfolders"> -->
-              <!-- <a href="##">{{ subfolders.title }}  <img class="more1" src="assets/likeali/images/more1.png"/></a> -->
-              <!-- <ul class="thr"> -->
-                  <!-- {% for subfolderitem in subfolders.subfolderitems %} -->
-                  <!-- {% if subfolderitem.output contains "web" %} -->
-                  <!-- <li><a href="##" >{{subfolderitem.title}}</a></li> -->
-                 
-                  <!-- {% endif %} -->
-                  <!-- {% endfor %} -->
-              <!-- </ul> -->
-          <!-- </li> -->
-          <!-- {% endif %} -->
-          <!-- {% endfor %} -->
-          <!-- {% endif %} -->
-          <!-- {% endfor %} -->
-      <!-- </ul> -->
-  </li>
-    {% endfor %}
-    {% endfor %}
+	<!-- 第一级菜单 -->
+	<!-- <ul class="ce"> -->
+	<!-- <li >{{sidebar[0].product}} {{sidebar[0].version}}</li> -->
+	<!-- {% for entry in sidebar %} -->
+	<!-- {% for folder in entry.folders %} -->
+	<!-- <!-- {% if folder.output contains "web" %} --> -->
+	<!-- <li> -->
+	<!-- <a href="#">{{ folder.title }} </a> -->
+	<!-- <!-- 第二级菜单 --> -->
+	<!-- <ul class="er"> -->
+	<!-- {% for folderitem in folder.folderitems %} -->
+	<!-- <!-- {% if folderitem.output contains "web" %} --> -->
+	<!-- <li class="e_li"> -->
+	<!-- <a href="##" >{{folderitem.title}} </a> -->
+	<!-- <!-- <li class="e_li"><a href="##" >二</a></li> --> -->
 
-</ul>
+	<!-- <!-- 第三级菜单 --> -->
+	<!-- <ul class="thr"> -->
+	<!-- {% for subfolders in folderitem.subfolders %} -->
+	<!-- <!-- {% if subfolders.output contains "web" %} --> -->
+
+	<!-- <li > -->
+	<!-- <a href="##">{{ subfolders.title }}  <img class="more1" src="assets/likeali/images/more1.png"/></a> -->
+
+
+	<!-- <div class="thr_nr"> -->
+	<!-- <h3> 三级目录B主要内容 </h3> -->
+	<!-- <img src="assets/likeali/images/aa.png"/> -->
+	<!-- </div> -->
+
+
+	<!-- <!-- <ul class="thr"> --> -->
+	<!-- <!-- {% for subfolderitem in subfolders.subfolderitems %} --> -->
+	<!-- <!-- {% if subfolderitem.output contains "web" %} --> -->
+	<!-- <!-- <li><a href="##" >{{subfolderitem.title}}</a></li> --> -->
+
+	<!-- <!-- {% endif %} --> -->
+	<!-- <!-- {% endfor %} --> -->
+	<!-- <!-- </ul> --> -->
+	<!-- </li> -->
+	<!-- <!-- {% endif %} --> -->
+	<!-- {% endfor %} -->
+	<!-- </ul> -->
+	<!-- </li> -->
+	<!-- <!-- {% endif %} --> -->
+	<!-- {% endfor %} -->
+	<!-- </ul> -->
+	<!-- </li> -->
+	<!-- <!-- {% endif %} --> -->
+	<!-- {% endfor %} -->
+	<!-- {% endfor %} -->
+
+	<!-- </ul> -->
 
 
 <!-- <ul class="ce"> -->
