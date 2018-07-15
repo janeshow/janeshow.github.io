@@ -1,0 +1,120 @@
+/* Effective stylesheet produced by snapshot save */
+.sidebar { position: fixed; top: 0px; bottom: 0px; left: 0px; background-color: rgb(51, 55, 68); z-index: 109; }
+.sidebar a, .sidebar li, .sidebar p, .sidebar span { text-rendering: optimizelegibility; letter-spacing: 0.02em; }
+.sidebar .sidebar-content { width: 180px; height: 100%; overflow: hidden; }
+.sidebar .sidebar-trans { transition: max-height 0.12s ease 0s; }
+.sidebar .sidebar-fold { height: 30px; width: 100%; background: rgb(74, 80, 100) none repeat scroll 0% 0%; color: rgb(174, 185, 194); text-align: center; line-height: 30px !important; font-size: 12px; cursor: pointer; -moz-user-select: none; }
+.sidebar .sidebar-fold:hover { background: rgb(74, 80, 100) none repeat scroll 0% 0%; color: rgb(255, 255, 255); }
+.sidebar .sidebar-inner { position: relative; }
+.sidebar .sidebar-nav { width: 100%; overflow-x: hidden; overflow-y: auto; }
+.sidebar .sidebar-nav ul { width: 200px; margin: 0px; padding: 0px; list-style: outside none none; overflow-y: scroll; overflow-x: hidden; }
+.sidebar .sidebar-nav li a { display: block; width: 180px; height: 40px; line-height: 40px; overflow: hidden; }
+.sidebar .sidebar-nav li a:hover { background: rgb(74, 80, 100) none repeat scroll 0% 0%; }
+.sidebar .sidebar-nav li a:hover .nav-icon, .sidebar .sidebar-nav li a:hover .nav-title { color: rgb(255, 255, 255); }
+.sidebar .sidebar-nav .nav-item { position: relative; }
+.sidebar .sidebar-nav .sidebar-title { height: 40px; background: rgb(66, 72, 91) none repeat scroll 0% 0%; color: rgb(255, 255, 255); line-height: 40px; position: relative; cursor: pointer; -moz-user-select: none; overflow: hidden; }
+.sidebar .sidebar-nav .sidebar-title:hover { background: rgb(0, 193, 222) none repeat scroll 0% 0%; }
+.sidebar .sidebar-nav .sidebar-title:hover .sidebar-manage { display: block; color: rgb(255, 255, 255); }
+.sidebar .sidebar-nav .sidebar-title-icon { display: inline-block; margin: 0px 8px 0px 20px; vertical-align: middle; transition: -webkit-transform 0.12s ease 0s; }
+.sidebar .sidebar-nav-active .sidebar-title-icon { transform: rotate(90deg); }
+.sidebar .sidebar-manage { vertical-align: middle; position: absolute; height: 40px; width: 40px; right: 0px; top: 0px; display: none; }
+.sidebar .sidebar-manage a { display: block; width: 100%; height: 100%; text-align: center; line-height: 40px; font-size: 16px; color: rgb(255, 255, 255); text-decoration: none; }
+.sidebar .sidebar-nav .nav-icon { width: 50px; text-align: center; font-size: 16px; float: left; color: rgb(174, 185, 194); height: 40px; line-height: 40px; }
+.sidebar .sidebar-nav .nav-title { float: left; overflow: hidden; color: rgb(255, 255, 255); white-space: nowrap; text-overflow: ellipsis; display: block; width: 130px; }
+.console-component-sidebar-dialog .selected-part .selected-item:nth-child(2n+1) { background: rgb(44, 52, 62) none repeat scroll 0% 0%; }
+.hasTopbar .sidebar { top: 50px; }
+.topbar { background-color: rgb(55, 61, 65); height: 50px; width: 100%; left: 0px; top: 0px; position: fixed; z-index: 999; }
+.topbar a, .topbar li, .topbar p, .topbar span { text-rendering: optimizelegibility; letter-spacing: 0.02em; text-decoration: none; }
+.topbar a:hover { text-decoration: none; }
+.topbar .topbar-info-dropdown { position: relative; }
+.topbar .topbar-info-dropdown .topbar-info-dropdown-toggle { color: rgb(255, 255, 255); }
+.topbar .topbar-info-dropdown:hover .topbar-info-dropdown-memu { visibility: visible; opacity: 1; }
+.topbar .topbar-info-dropdown-memu { padding: 0px; position: absolute; top: 100%; right: 0px; visibility: hidden; float: left; list-style: outside none none; background-color: rgb(255, 255, 255); background-clip: padding-box; z-index: 1; font-size: 12px; min-width: 100%; margin: 0px; border: medium none; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); transition: opacity 0.15s ease 0s, visibility 0s ease 0.15s; opacity: 0; white-space: nowrap; }
+.topbar .topbar-info-dropdown-memu li a { display: block; padding: 0px 20px; clear: both; font-weight: 400; line-height: 1.42857; color: rgb(51, 51, 51); white-space: nowrap; min-width: 160px; transition: all 0.15s ease 0s; cursor: pointer; }
+.topbar .topbar-info-dropdown-memu li a:hover { background-color: rgb(245, 245, 245); text-decoration: none; }
+.topbar .topbar-info-dropdown-memu-list { padding: 10px 0px; }
+.topbar .topbar-info-item { display: inline-block; }
+.topbar .topbar-info { position: absolute; z-index: 3; top: 0px; right: 0px; }
+.topbar .topbar-info .topbar-btn { padding: 0px 12px; height: 50px; display: block; z-index: 2; border-right: 1px solid rgb(42, 47, 50); font-size: 14px; line-height: 50px; text-decoration: none; }
+.topbar .topbar-info .topbar-btn:hover { background-color: rgb(42, 47, 50); }
+.topbar .topbar-info .topbar-info-btn a { height: 40px; line-height: 39px; padding: 0px 10px; }
+.topbar .topbar-info .topbar-info-btn-gap { margin: 10px 0px; height: 1px; display: block; width: 100%; background: rgb(234, 234, 234) none repeat scroll 0% 0%; }
+.i18n-box .topbar-btn { cursor: pointer; }
+.topbar-user .topbar-user-avatar { width: 36px; height: 36px; border-radius: 18px; vertical-align: middle; }
+.topbar-user .topbar-user-info { text-align: center; padding-top: 16px; border-bottom: 1px solid rgb(234, 234, 234); }
+.topbar-user .topbar-user-info .topbar-user-email { margin: 8px 0px; }
+.topbar-user .topbar-align-right { right: 0px; left: auto; }
+.topbar-user .topbar-user-entrance-list { overflow: hidden; width: 270px; margin: 8px 0px; padding: 8px 15px; }
+.topbar-user .topbar-user-entrance-list .topbar-user-entrance span { white-space: normal; overflow-wrap: break-word; word-break: normal; }
+.topbar-user .topbar-user-entrance-list .topbar-user-entrance span.topbar-user-entrance-logo { line-height: 40px; }
+.topbar-user .topbar-user-entrance { width: 80px; height: 80px; float: left; text-align: center; color: rgb(51, 51, 51); transition: background 0.15s ease 0s; border-radius: 2px; }
+.topbar-user .topbar-user-entrance:hover { background: rgb(245, 245, 245) none repeat scroll 0% 0%; text-decoration: none; }
+.topbar-user .topbar-user-entrance-logo { font-size: 20px; margin: 8px auto 4px; width: 40px; height: 40px; display: block; line-height: 40px; color: rgb(120, 141, 155); }
+.topbar-user .user-btn-link { height: 50px; line-height: 50px; display: block; transition: all 0.15s ease 0s; text-align: center; color: rgb(51, 51, 51); background-color: rgb(245, 245, 246); border-top: medium none rgb(234, 234, 234); }
+.topbar-info-item { display: inline-block; }
+.topbar-notice { position: relative; font-size: 12px; }
+.topbar-notice:hover .topbar-info-dropdown-memu { visibility: visible; opacity: 1; }
+.topbar-notice .topbar-btn { padding: 0px 12px; height: 50px; display: block; z-index: 2; border-right: 1px solid rgb(42, 47, 50); color: rgb(255, 255, 255); text-decoration: none; }
+.topbar-notice .topbar-btn:hover { background: rgb(42, 47, 50) none repeat scroll 0% 0%; }
+.topbar-notice .topbar-btn-notice-icon { font-size: 24px; line-height: 50px; vertical-align: text-bottom; }
+.topbar-notice .topbar-btn-notice-num { font-size: 12px; color: rgb(255, 255, 255); background: rgb(255, 153, 0) none repeat scroll 0% 0%; border-radius: 5px; padding: 2px 5px; display: inline-block; margin-top: 15px; line-height: 16px; vertical-align: top; text-align: center; }
+.topbar-notice .topbar-notice-panel { top: 50px; width: 300px; border-radius: 2px; z-index: 15; box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.176); }
+.topbar-notice .topbar-notice-panel, .topbar-notice .topbar-notice-panel .topbar-notice-arrow { position: absolute; left: 50%; transform: translateX(-50%); }
+.topbar-notice .topbar-notice-panel .topbar-notice-arrow { border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 6px solid rgb(234, 237, 241); top: -6px; }
+.topbar-notice .topbar-notice-panel .topbar-notice-head { height: 50px; background-color: rgb(234, 237, 241); padding: 0px 15px; line-height: 50px; color: rgb(51, 51, 51); font-size: 14px; }
+.topbar-notice .topbar-notice-panel .topbar-notice-body { max-height: 300px; overflow-y: auto; background: rgb(255, 255, 255) none repeat scroll 0% 0%; font-size: 12px; }
+.topbar-notice .topbar-notice-panel .topbar-notice-body li { height: 60px; line-height: 20px; border-bottom: 1px solid rgb(234, 237, 241); }
+.topbar-notice .topbar-notice-panel .topbar-notice-body li a { display: block; height: 100%; padding: 10px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; color: rgb(51, 51, 51); }
+.topbar-notice .topbar-notice-panel .topbar-notice-body li a:hover { background: rgb(249, 249, 249) none repeat scroll 0% 0%; }
+.topbar-notice .topbar-notice-panel .topbar-notice-body li .topbar-notice-link { display: block; max-width: 300px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: rgb(0, 193, 222); }
+.topbar-notice .topbar-notice-panel .topbar-notice-body li .topbar-notice-time { color: rgb(74, 74, 74); }
+.topbar-notice .topbar-notice-panel .topbar-notice-class { padding: 8px 0px; float: right; display: none; }
+.topbar-notice .topbar-notice-panel .topbar-notice-class .topbar-notice-class-name { display: block; height: 24px; line-height: 24px; width: 66px; background: rgb(234, 237, 241) none repeat scroll 0% 0%; text-align: center; border-radius: 3px; }
+.topbar-notice .topbar-notice-panel .topbar-notice-foot { height: 50px; line-height: 50px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; text-align: center; }
+.topbar-notice .topbar-notice-panel .topbar-notice-foot .topbar-notice-more { color: rgb(0, 193, 222); }
+.topbar-search .topbar-search-container { display: inline-block; vertical-align: middle; margin: 12px 0px; }
+.topbar-search .topbar-search-container .aliyun-common-search-container { float: right; }
+.topbar .topbar-search { position: relative; }
+.aliyun-console-base-bar .topbar-product-category-box { padding: 24px 12px; background-color: rgb(255, 255, 255); }
+.aliyun-console-base-bar .topbar-product-category-box .topbar-product-search { width: 600px; position: relative; margin: 0px auto; }
+.aliyun-console-base-bar .topbar-product-category-box .topbar-product-search input { width: 100%; padding-left: 10px; padding-right: 28px; padding-bottom: 7px; border-width: medium medium 2px; border-style: none none solid; border-color: currentcolor currentcolor rgb(227, 230, 233); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; font-size: 18px; opacity: 0.3; color: rgb(102, 102, 102); background-color: transparent; }
+.aliyun-console-base-bar .topbar-product-category-box .topbar-product-search input:focus { color: rgb(55, 61, 65); opacity: 1; border-width: medium medium 2px; border-style: none none solid; border-color: currentcolor currentcolor rgb(0, 193, 222); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; outline: 0px none; }
+.aliyun-console-base-bar .topbar-product-category-box .topbar-product-search-icon { position: absolute; right: 10px; top: 50%; color: rgb(55, 61, 65); font-size: 20px; transform: translateY(-50%); padding-bottom: 7px; }
+.aliyun-console-base-bar .topbar-product-category-box .topbar-product-hd { position: relative; margin-bottom: 20px; }
+.aliyun-console-base-bar .topbar-product-category-box .waterfall-group { float: left; padding: 0px 4px; min-width: 120px; }
+.aliyun-console-base-bar .topbar-product-category-box .column-6 .waterfall-group { width: 16.6666%; }
+.aliyun-console-base-bar .topbar-product-category-box .waterfall-group-wrapper dl { margin: 0px 0px 8px; }
+.aliyun-console-base-bar .topbar-product-category-box .waterfall-group-wrapper dt { line-height: 28px; color: rgb(153, 153, 153); background-color: rgb(240, 240, 240); padding: 0px 8px; font-weight: 400; }
+.aliyun-console-base-bar .topbar-product-category-box .waterfall-group-wrapper dd { margin: 0px; }
+.aliyun-console-base-bar .topbar-product-category-box .waterfall-group-wrapper dd a { display: block; padding: 0px 8px; line-height: 28px; height: 28px; background: rgb(245, 245, 246) none repeat scroll 0% 0%; color: rgb(55, 61, 65); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.aliyun-console-base-bar .topbar-product-category-box .waterfall-group-wrapper dd a:hover { background: rgb(0, 193, 222) none repeat scroll 0% 0%; color: rgb(255, 255, 255); }
+.aliyun-console-base-bar .topbar-product-dropdown { display: none; }
+.aliyun-console-base-bar .topbar-product { position: relative; z-index: 2; }
+.aliyun-console-base-bar .topbar-product .topbar-product-btn { padding: 0px 12px; display: inline-block; height: 50px; cursor: pointer; color: rgb(255, 255, 255); font-size: 14px; line-height: 50px; }
+.aliyun-console-base-bar .topbar-product .topbar-btn { border-right: 1px solid rgb(42, 47, 50); text-decoration: none; }
+.aliyun-console-base-bar .topbar-product .topbar-btn:hover { background: rgb(42, 47, 50) none repeat scroll 0% 0%; }
+.aliyun-console-base-bar .topbar-product .topbar-sidebar-arrow-down { display: inline-block; width: 18px; text-align: center; vertical-align: middle; transition: transform 0.2s ease 0s, vertical-align 0.2s ease 0s; }
+.aliyun-console-base-bar .topbar-product .topbar-product-dropdown { position: fixed; top: 50px; right: 0px; left: 0px; border: medium none; margin: 0px; z-index: -1 !important; }
+.aliyun-console-base-bar .topbar-product .topbar-product-dropdown a { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: rgb(51, 51, 51); display: inline-block; width: 100%; height: 100%; text-decoration: none; }
+.aliyun-console-base-bar .topbar-product .topbar-product-container { position: absolute; min-height: 240px; left: 0px; right: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; transition: all 0.15s ease 0s, all 0.15s ease 0s; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
+.aliyun-console-base-bar .topbar-product .topbar-product-close { position: absolute; left: 50%; bottom: -24px; width: 140px; height: 24px; margin-left: -25px; text-align: center; line-height: 20px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; cursor: pointer; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); color: rgb(102, 102, 102); transition: all 0.15s ease 0s, all 0.15s ease 0s; }
+.aliyun-console-base-bar .topbar-product .topbar-product-close:hover { color: rgb(51, 51, 51); }
+.aliyun-console-base-bar .topbar-product .topbar-product-close .icon-double-arrow { display: inline-block; margin-top: 8px; }
+.aliyun-console-base-bar .topbar-product .topbar-product-close .icon-double-arrow i { display: block; border-width: 1px 1px medium 0px; border-style: solid solid none none; border-color: rgb(51, 51, 51) rgb(51, 51, 51) currentcolor currentcolor; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; width: 8px; height: 8px; background-color: transparent; transform: rotate(-45deg); }
+.aliyun-console-base-bar .topbar-product .topbar-product-close .icon-double-arrow i:first-child { margin-bottom: -3px; }
+.aliyun-logo { height: 50px; }
+.aliyun-logo a { text-decoration: none; }
+.aliyun-logo a:hover { background: rgb(42, 47, 50) none repeat scroll 0% 0%; }
+.aliyun-logo .aliyun-icon { margin-right: 1px; text-align: center; width: 50px; font-size: 24px; color: rgb(255, 255, 255); line-height: 50px; height: 100%; text-decoration: none; }
+.aliyun-logo .aliyun-icon:hover { text-decoration: none; }
+.aliyun-logo .console-link { color: rgb(255, 255, 255); font-size: 14px; line-height: 50px; margin-right: 1px; text-align: center; padding: 0px 12px; text-decoration: none; }
+.aliyun-logo .console-link:hover { text-decoration: none; }
+.aliyun-logo .console-link span { letter-spacing: 0.02em; }
+.aliyun-logo { height: 50px; }
+.aliyun-logo a { text-decoration: none; }
+.aliyun-logo a:hover { background: rgb(42, 47, 50) none repeat scroll 0% 0%; }
+.aliyun-logo .aliyun-icon { margin-right: 1px; text-align: center; width: 50px; font-size: 24px; color: rgb(255, 255, 255); line-height: 50px; height: 100%; border-right: 1px solid rgb(42, 47, 50); text-decoration: none; }
+.aliyun-logo .aliyun-icon:hover { text-decoration: none; }
+.aliyun-logo .console-link { color: rgb(255, 255, 255); font-size: 14px; line-height: 50px; margin-right: 1px; padding: 0px 12px; text-align: center; border-right: 1px solid rgb(42, 47, 50); text-decoration: none; }
+.aliyun-logo .console-link:hover { text-decoration: none; }
+.aliyun-logo .console-link span { letter-spacing: 0.02em; }

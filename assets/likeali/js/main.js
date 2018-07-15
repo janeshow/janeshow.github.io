@@ -1,60 +1,63 @@
-
-
-$(function(){
-    $(".ce > li > a").click(function(){
-	     $(this).addClass("xz").parents().siblings().find("a").removeClass("xz");
-		 $(this).parents().siblings().find(".er").hide(300);
-		 $(this).siblings(".er").toggle(300);
-		 $(this).parents().siblings().find(".er > li > .thr").hide().parents().siblings().find(".thr_nr").hide();
-		
-	})
-	
-    $(".er > li > a").click(function(){
-        $(this).addClass("sen_x").parents().siblings().find("a").removeClass("sen_x");
-        $(this).parents().siblings().find(".thr").hide(300);	
-	    $(this).siblings(".thr").toggle(300);	
-	})
-
-    $(".thr > li > a").click(function(){
-	     $(this).addClass("xuan").parents().siblings().find("a").removeClass("xuan");
-		 $(this).parents().siblings().find(".thr_nr").hide();	
-	     $(this).siblings(".thr_nr").toggle();
-	})
-
-
-
-
-
-
-})
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+;
+(function() {
+    var vendorPath = '../console/vendor';
+    var common = '../console/scripts';
+    require.config({
+        //baseUrl: './scripts/',
+        baseUrl: 'http://localhost:3000/scripts/',
+        skipDataMain: true,
+        paths: {
+            'angular': vendorPath + '/angular/angular',
+            'angular-route': vendorPath + '/angular-route/angular-route',
+            'angular-resource': vendorPath + '/angular-resource/angular-resource',
+            'angular-animate': vendorPath + '/angular-animate/angular-animate',
+            'angular-growl': vendorPath + '/angular-growl/build/angular-growl',
+            'angular-cookies': vendorPath + '/angular-cookies/angular-cookies',
+            'angular-sanitize': vendorPath + '/angular-sanitize/angular-sanitize.min',
+            'ui.router': vendorPath + '/angular-ui-router/release/angular-ui-router.min',
+            'angular-ui-validate': vendorPath + '/angular-ui-utils/validate.min',
+            'ui.bootstrap': vendorPath + '/angular-bootstrap/ui-bootstrap',
+            'bindonce': vendorPath + '/angular-bindonce/bindonce',
+            'jQuery': vendorPath + '/jquery/jquery.min',
+            'highcharts': vendorPath + '/highcharts/highcharts',
+            'ng-clip': vendorPath + '/ng-clip/ng-clip',
+            'app': 'accountcenter/app',
+            'bootstrap': 'accountcenter/bootstrap',
+            'spinjs': vendorPath + '/spinjs/spin',
+            'common': common,
+            'common-tpl': common + '/aliyun-console-tpl',
+            'aliyun-console-bootstrap-tpl': common + '/aliyun-console-bootstrap-tpl',
+            'aliyun-accountcenter-tpl': 'accountcenter/aliyun-accountcenter-tpl',
+            'angular-locale-zh-cn': vendorPath + '/ng-locale/angular-locale_zh-cn',
+            'angular-translate': vendorPath + '/angular-translate/angular-translate',
+            'uploadify': "accountcenter/customerVendor/jquery.uploadify",
+            'ajaxupload': "accountcenter/customerVendor/jquery.ajaxupload",
+            'jquery-cookie': "accountcenter/customerVendor/jquery.cookie",
+            'i18nHelper':'accountcenter/i18nHelper'
+        },
+        shim: {
+            'jQuery': { exports: 'jQuery'},
+            'angular': { exports: 'angular', deps: ['jQuery']},
+            'ui.router': { deps: ['angular']},
+            'angular-animate': {deps: ['angular']},
+            'angular-growl': { deps: ['angular-animate']},
+            'angular-resource': { deps: ['angular']},
+            'angular-cookies': { deps: ['angular']},
+            'angular-sanitize': { deps: ['angular']},
+            'angular-ui-validate': { deps: ['angular']},
+            'bindonce': { deps: ['angular']},
+            'aliyun-console-bootstrap-tpl': { deps: ['angular']},
+            'ui.bootstrap': { deps: ['aliyun-console-bootstrap-tpl']},
+            'ng-clip': {deps: ['angular']},
+            'highcharts': {deps: ['jQuery']},
+            'common-tpl': { deps: ['angular']},
+            'spinjs': {},
+            'angular-locale-zh-cn': { deps: ['angular']},
+            'aliyun-accountcenter-tpl': { deps: ['angular']},
+            'angular-translate': { deps: ['angular']},
+            'uploadify':{ deps:['jQuery']},
+            'ajaxupload':{ deps:['jQuery']},
+            'jquery-cookie':{ deps:['jQuery']}
+        }
+    });
+}());
